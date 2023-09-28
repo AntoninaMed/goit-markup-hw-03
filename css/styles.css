@@ -7,8 +7,30 @@ letter-spacing: 0.02em
 
 ul{
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+} 
+h1,h2,h3,p{
+    margin: 0;
 }
-
+img{ 
+    display: block;
+}
+.container{
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header{
+    border-bottom: 1px solid #e7e9fc;
+}
+.container-header{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
 .nav-menu-logo {
     color: #4D5AE5;
     font-family: Raleway, sans-serif;
@@ -18,6 +40,7 @@ ul{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
+    margin-right: 76px;
 }
 .nav-menu-span{
     color: #2E2F42;
@@ -25,6 +48,18 @@ ul{
 .nav-menu-logo:hover,.nav-menu-logo:focus {
 color: #404BBF;
 } 
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-menu-list{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 .nav-menu-item {
     color: #2E2F42;
     font-size: 16px;
@@ -32,13 +67,19 @@ color: #404BBF;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration: none;
+    padding: 24px 0;
 }
 .nav-menu-item:hover,.nav-menu-item:focus {
     color: #404bbf;
     } 
-.contacts {
+.contacts-list {
     font-style: normal;
+    display: flex;
+   gap: 35px;
+  
+
 }
+
 .contacts-item {
     color:#434455;
 font-size: 16px;
@@ -46,12 +87,16 @@ font-weight: 400;
 line-height: 1.5; 
 letter-spacing: 0.02em;
 text-decoration: none;
+display: flex;
+flex-direction: row;
 }
+
 .contacts-item:hover,.contacts-item:focus {
     color: #404bbf; 
 }
 .section-main {
     background-color: #2E2F42;
+    padding: 188px 0;
 }
 
 .main-title{
@@ -62,6 +107,8 @@ font-size: 56px;
 font-weight: 700;
 line-height: 1.07;
 letter-spacing: 0.02em;
+margin: 0 auto;
+max-width: 496px;
 }
 .button{
 background-color: #4D5AE5;
@@ -72,9 +119,37 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.04em;
+max-width: 196px;
+height: 56px;
+display: block;
+border-radius: 4px;
+border: none;
+margin: 0 auto;
+
 }
 .button:hover, .button:focus{
     background-color: #404bbf; 
+}
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.section-description{
+    padding: 120px;
+}
+.description-list{
+    display: flex;
+    gap: 24px;
+
 }
 .description-title{
     color: #2E2F42;
@@ -83,7 +158,14 @@ font-size: 20px;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
+margin-bottom: 8px;
+text-align:left;
+}
 
+.description-item{
+color: #FFF;
+width: calc(100%-72px)/4;
+border: 1px solid #000;
 }
 .description-text{
     color: #434455;
@@ -97,6 +179,7 @@ letter-spacing: 0.02em;
     line-height: 1.5;
     letter-spacing: 0.02em;
     background-color: #F4F4FD;
+   padding: 120px 0;
 }
 .team-title{
     color: #2E2F42;
@@ -107,9 +190,19 @@ font-weight: 700;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
+margin-bottom:72px;
+}
+.section-team-item{
+display: flex;
+gap: 24px;
 }
 .team-list{
     background-color: #FFF;
+    width: calc(100%-72px)/4;
+    border-radius: 0px 0px 4px 4px;
+}
+.content-team{
+    padding: 32px 0;
 }
 .team-subtitle{
     color: #2E2F42;
@@ -119,6 +212,8 @@ font-size: 20px;
 font-weight: 500;
 line-height:1.2;
 letter-spacing: 0.02em;
+text-align: center;
+margin-bottom: 8px;
 }
 .team-text{
     color: #434455;
@@ -128,9 +223,23 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.02em;
+text-align: center;
 }
 .portfolio{
     background-color: #FFF;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.portfolio-list{
+    display: flex;
+    gap: 24px;
+    background: #FFF;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    width: calc(100%-48px)/3;
+}
+.content-portfolio{
+    padding: 32px 0;
 }
 .portfolio-title{
     color: #2E2F42;
@@ -141,6 +250,8 @@ font-weight: 700;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
+margin-bottom: 72px;
+
 }
 .portfolio-subtitle{
     color: #2E2F42;
@@ -149,6 +260,7 @@ text-transform: capitalize;
     font-weight: 500;
     line-height:1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 .portfolio-text{
     color: #434455;
@@ -169,9 +281,12 @@ letter-spacing: 0.02em;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 18px;
+    display: inline-block;
 }
 .lower-section{
     background-color: #2E2F42;
+    padding: 101px;
 
 }
 .lower-logo-span{
@@ -184,4 +299,6 @@ font-size: 16px;
 font-weight: 400;
 line-height:1.5;
 letter-spacing: 0.02em;
+max-width: 264px;
+
 }
