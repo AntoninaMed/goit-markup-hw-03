@@ -68,6 +68,7 @@ color: #404BBF;
     letter-spacing: 0.02em;
     text-decoration: none;
     padding: 24px 0;
+    display: block;
 }
 .nav-menu-item:hover,.nav-menu-item:focus {
     color: #404bbf;
@@ -168,8 +169,7 @@ text-align:left;
 
 .description-item{
 color: #FFF;
-width: calc((100% -72px) / 4);
-border: 1px solid #000;
+width: calc((100% - 72px) / 4);
 }
 .description-text{
     color: #434455;
@@ -294,6 +294,7 @@ letter-spacing: 0.02em;
     text-transform: uppercase;
     margin-bottom: 16px;
     display: inline-block;
+    text-decoration: none;
 }
 .lower-section{
     background-color: #2E2F42;
