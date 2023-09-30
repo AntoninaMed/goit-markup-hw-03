@@ -80,7 +80,7 @@ color: #404BBF;
 .contacts-list{
     font-style: normal;
     display: flex;
-    gap: 35px;
+    gap: 40px;
 }
 
 .contacts-item {
@@ -124,7 +124,7 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.04em;
-max-width: 196px;
+min-width: 169px;
 height: 56px;
 display: block;
 border-radius: 4px;
@@ -290,12 +290,12 @@ letter-spacing: 0.02em;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     display: inline-block;
 }
 .lower-section{
     background-color: #2E2F42;
-    padding: 101px;
+    padding: 100px 0;
 
 }
 .lower-logo-span{
